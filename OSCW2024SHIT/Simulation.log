@@ -1,0 +1,363 @@
+=============== New Simulation ===============
+==============================================
+
+ >myOS: Booting OS
+  >myOS: Kernel image written to OS partition. Starting IDLE
+============== SIMULATION STEP 1 ==============
+>myPC: At time 1 fetched a I
+============== SIMULATION STEP 2 ==============
+>myPC: At time 2 executed a I
+ >myOS: System is idle. Waiting for user input
+============== SIMULATION STEP 3 ==============
+>myPC: At time 3 fetched a I
+============== SIMULATION STEP 4 ==============
+>User: Pressed button 1
+>myPC: At time 4 executed a I
+ >myOS: System is idle. Waiting for user input
+============== SIMULATION STEP 5 ==============
+>myPC: Keyboard interrupt handled. Request for program1.exe. Staring Memory Manager
+>myPC: At time 5 fetched a I
+============== SIMULATION STEP 6 ==============
+>myPC: At time 6 executed a I
+ >myOS: System is idle. Waiting for user input
+============== SIMULATION STEP 7 ==============
+>myPC: At time 7 fetched a *
+============== SIMULATION STEP 8 ==============
+>myPC: At time 8 executed a *
+============== SIMULATION STEP 9 ==============
+>myPC: At time 9 fetched a M
+============== SIMULATION STEP 10 ==============
+>myPC: At time 10 executed a M
+ >myOS: Finished running memory manager
+  >Memory Manager : Partition with BA : 9 was found.Starting Process Creator
+============== SIMULATION STEP 11 ==============
+>myPC: At time 11 fetched a C
+============== SIMULATION STEP 12 ==============
+>myPC: At time 12 executed a C
+ >myOS: Finished creating process
+  >Process Creator: process with PID 8 created at partition -1 (BA 9). Starting process admitter
+============== SIMULATION STEP 13 ==============
+>myPC: At time 13 fetched a A
+============== SIMULATION STEP 14 ==============
+>myPC: At time 14 executed a A
+ >myOS: Finished admitting process to the ready queue
+  >Process Admitter: Admitted process 8 to the readyQueue. Starting Scheduler
+============== SIMULATION STEP 15 ==============
+>myPC: At time 15 fetched a S
+============== SIMULATION STEP 16 ==============
+>myPC: At time 16 executed a S
+ >myOS: Finished scheduling
+  >Scheduler: selected from the ready queue process 8
+============== SIMULATION STEP 17 ==============
+>myPC: At time 17 fetched a *
+============== SIMULATION STEP 18 ==============
+>myPC: At time 18 executed a *
+============== SIMULATION STEP 19 ==============
+>User: Pressed button 2
+>myPC: Keyboard interrupt handled. Request for program2.exe. Staring Memory Manager
+>myPC: At time 19 fetched a *
+============== SIMULATION STEP 20 ==============
+>myPC: At time 20 executed a *
+============== SIMULATION STEP 21 ==============
+ >MyOS: suspending process 8
+ >MyOS: adding suspended process (8) to ready queue
+>myPC: At time 21 fetched a *
+============== SIMULATION STEP 22 ==============
+>myPC: At time 22 executed a *
+============== SIMULATION STEP 23 ==============
+>myPC: At time 23 fetched a M
+============== SIMULATION STEP 24 ==============
+>myPC: At time 24 executed a M
+ >myOS: Finished running memory manager
+  >Memory Manager : Partition with BA : 26 was found.Starting Process Creator
+============== SIMULATION STEP 25 ==============
+>myPC: At time 25 fetched a C
+============== SIMULATION STEP 26 ==============
+>myPC: At time 26 executed a C
+ >myOS: Finished creating process
+  >Process Creator: process with PID 9 created at partition -1 (BA 26). Starting process admitter
+============== SIMULATION STEP 27 ==============
+>myPC: At time 27 fetched a A
+============== SIMULATION STEP 28 ==============
+>myPC: At time 28 executed a A
+ >myOS: Finished admitting process to the ready queue
+  >Process Admitter: Admitted process 9 to the readyQueue. Starting Scheduler
+============== SIMULATION STEP 29 ==============
+>User: Pressed button 3
+>myPC: Keyboard interrupt handled. Request for program3.exe. Staring Memory Manager
+>myPC: At time 29 fetched a S
+============== SIMULATION STEP 30 ==============
+>myPC: At time 30 executed a S
+ >myOS: Finished scheduling
+  >Scheduler: suspended process found (8) in the ready queue
+  >Scheduler: selected from the ready queue process 8
+============== SIMULATION STEP 31 ==============
+ >MyOS: suspending process 8
+ >MyOS: adding suspended process (8) to ready queue
+>myPC: At time 31 fetched a *
+============== SIMULATION STEP 32 ==============
+>myPC: At time 32 executed a *
+============== SIMULATION STEP 33 ==============
+>myPC: At time 33 fetched a M
+============== SIMULATION STEP 34 ==============
+>myPC: At time 34 executed a M
+ >myOS: Finished running memory manager
+  >Memory Manager : Partition with BA : 50 was found.Starting Process Creator
+============== SIMULATION STEP 35 ==============
+>myPC: At time 35 fetched a C
+============== SIMULATION STEP 36 ==============
+>myPC: At time 36 executed a C
+ >myOS: Finished creating process
+  >Process Creator: process with PID 10 created at partition -1 (BA 50). Starting process admitter
+============== SIMULATION STEP 37 ==============
+>myPC: At time 37 fetched a A
+============== SIMULATION STEP 38 ==============
+>myPC: At time 38 executed a A
+ >myOS: Finished admitting process to the ready queue
+  >Process Admitter: Admitted process 10 to the readyQueue. Starting Scheduler
+============== SIMULATION STEP 39 ==============
+>myPC: At time 39 fetched a S
+============== SIMULATION STEP 40 ==============
+>myPC: At time 40 executed a S
+ >myOS: Finished scheduling
+  >Scheduler: suspended process found (8) in the ready queue
+  >Scheduler: selected from the ready queue process 8
+============== SIMULATION STEP 41 ==============
+>User: Pressed button 1
+>myPC: Keyboard interrupt handled. Request for program1.exe. Staring Memory Manager
+>myPC: At time 41 fetched a *
+============== SIMULATION STEP 42 ==============
+>myPC: At time 42 executed a *
+============== SIMULATION STEP 43 ==============
+ >MyOS: suspending process 8
+ >MyOS: adding suspended process (8) to ready queue
+>myPC: At time 43 fetched a *
+============== SIMULATION STEP 44 ==============
+>myPC: At time 44 executed a *
+============== SIMULATION STEP 45 ==============
+>myPC: At time 45 fetched a M
+============== SIMULATION STEP 46 ==============
+>myPC: At time 46 executed a M
+ >myOS: Finished running memory manager
+  >Memory Manager : Partition with BA : 84 was found.Starting Process Creator
+============== SIMULATION STEP 47 ==============
+>myPC: At time 47 fetched a C
+============== SIMULATION STEP 48 ==============
+>myPC: At time 48 executed a C
+ >myOS: Finished creating process
+  >Process Creator: process with PID 11 created at partition -1 (BA 84). Starting process admitter
+============== SIMULATION STEP 49 ==============
+>User: Pressed button 2
+>myPC: Keyboard interrupt handled. Request for program2.exe. Staring Memory Manager
+>myPC: At time 49 fetched a A
+============== SIMULATION STEP 50 ==============
+>myPC: At time 50 executed a A
+ >myOS: Finished admitting process to the ready queue
+  >Process Admitter: Admitted process 11 to the readyQueue. Starting Scheduler
+============== SIMULATION STEP 51 ==============
+>myPC: At time 51 fetched a *
+============== SIMULATION STEP 52 ==============
+>myPC: At time 52 executed a *
+============== SIMULATION STEP 53 ==============
+>myPC: At time 53 fetched a M
+============== SIMULATION STEP 54 ==============
+>myPC: At time 54 executed a M
+ >myOS: Finished running memory manager
+  >Memory Manager : Partition with BA : 101 was found.Starting Process Creator
+============== SIMULATION STEP 55 ==============
+>myPC: At time 55 fetched a C
+============== SIMULATION STEP 56 ==============
+>myPC: At time 56 executed a C
+ >myOS: Finished creating process
+  >Process Creator: process with PID 12 created at partition -1 (BA 101). Starting process admitter
+============== SIMULATION STEP 57 ==============
+>myPC: At time 57 fetched a A
+============== SIMULATION STEP 58 ==============
+>myPC: At time 58 executed a A
+ >myOS: Finished admitting process to the ready queue
+  >Process Admitter: Admitted process 12 to the readyQueue. Starting Scheduler
+============== SIMULATION STEP 59 ==============
+>myPC: At time 59 fetched a S
+============== SIMULATION STEP 60 ==============
+>myPC: At time 60 executed a S
+ >myOS: Finished scheduling
+  >Scheduler: suspended process found (8) in the ready queue
+  >Scheduler: selected from the ready queue process 8
+============== SIMULATION STEP 61 ==============
+>User: Pressed button 3
+>myPC: Keyboard interrupt handled. Request for program3.exe. Staring Memory Manager
+>myPC: At time 61 fetched a *
+============== SIMULATION STEP 62 ==============
+>myPC: At time 62 executed a *
+============== SIMULATION STEP 63 ==============
+ >MyOS: suspending process 8
+ >MyOS: adding suspended process (8) to ready queue
+>myPC: At time 63 fetched a *
+============== SIMULATION STEP 64 ==============
+>myPC: At time 64 executed a *
+============== SIMULATION STEP 65 ==============
+>myPC: At time 65 fetched a M
+============== SIMULATION STEP 66 ==============
+>myPC: At time 66 executed a M
+ >myOS: Finished running memory manager
+  >Memory Manager : Partition with BA : 125 was found.Starting Process Creator
+============== SIMULATION STEP 67 ==============
+>myPC: At time 67 fetched a C
+============== SIMULATION STEP 68 ==============
+>myPC: At time 68 executed a C
+ >myOS: Finished creating process
+  >Process Creator: process with PID 13 created at partition -1 (BA 125). Starting process admitter
+============== SIMULATION STEP 69 ==============
+>User: Pressed button 1
+>myPC: Keyboard interrupt handled. Request for program1.exe. Staring Memory Manager
+>myPC: At time 69 fetched a A
+============== SIMULATION STEP 70 ==============
+>myPC: At time 70 executed a A
+ >myOS: Finished admitting process to the ready queue
+  >Process Admitter: Admitted process 13 to the readyQueue. Starting Scheduler
+============== SIMULATION STEP 71 ==============
+>myPC: At time 71 fetched a *
+============== SIMULATION STEP 72 ==============
+>myPC: At time 72 executed a *
+============== SIMULATION STEP 73 ==============
+>myPC: At time 73 fetched a M
+============== SIMULATION STEP 74 ==============
+>myPC: At time 74 executed a M
+ >myOS: Finished running memory manager
+  >Memory Manager : Partition with BA : 159 was found.Starting Process Creator
+============== SIMULATION STEP 75 ==============
+>myPC: At time 75 fetched a C
+============== SIMULATION STEP 76 ==============
+>myPC: At time 76 executed a C
+ >myOS: Finished creating process
+  >Process Creator: process with PID 14 created at partition -1 (BA 159). Starting process admitter
+============== SIMULATION STEP 77 ==============
+>myPC: At time 77 fetched a A
+============== SIMULATION STEP 78 ==============
+>myPC: At time 78 executed a A
+ >myOS: Finished admitting process to the ready queue
+  >Process Admitter: Admitted process 14 to the readyQueue. Starting Scheduler
+============== SIMULATION STEP 79 ==============
+>myPC: At time 79 fetched a S
+============== SIMULATION STEP 80 ==============
+>myPC: At time 80 executed a S
+ >myOS: Finished scheduling
+  >Scheduler: suspended process found (8) in the ready queue
+  >Scheduler: selected from the ready queue process 8
+============== SIMULATION STEP 81 ==============
+>myPC: At time 81 fetched a $
+============== SIMULATION STEP 82 ==============
+>myPC: At time 82 executed a $
+ >myOS: Exiting the running process
+============== SIMULATION STEP 83 ==============
+>myPC: At time 83 fetched a X
+============== SIMULATION STEP 84 ==============
+>myPC: At time 84 executed a X
+ >myOS: Finished exiting program 5
+  >Exit: finished exiting process 8. Starting coalesce
+============== SIMULATION STEP 85 ==============
+>myPC: At time 85 fetched a N
+============== SIMULATION STEP 86 ==============
+>myPC: At time 86 executed a N
+ >myOS: Coalesce partition 9
+  >Coalesce : No adjacent free partitions to merge.
+  >Coalesce: Finished coalescing partition 9.Starting Process Scheduler
+============== SIMULATION STEP 87 ==============
+>myPC: At time 87 fetched a S
+============== SIMULATION STEP 88 ==============
+>myPC: At time 88 executed a S
+ >myOS: Finished scheduling
+  >Scheduler: selected from the ready queue process 9
+============== SIMULATION STEP 89 ==============
+>myPC: At time 89 fetched a *
+============== SIMULATION STEP 90 ==============
+>myPC: At time 90 executed a *
+============== SIMULATION STEP 91 ==============
+>myPC: At time 91 fetched a *
+============== SIMULATION STEP 92 ==============
+>myPC: At time 92 executed a *
+============== SIMULATION STEP 93 ==============
+>myPC: At time 93 fetched a *
+============== SIMULATION STEP 94 ==============
+>myPC: At time 94 executed a *
+============== SIMULATION STEP 95 ==============
+>myPC: At time 95 fetched a *
+============== SIMULATION STEP 96 ==============
+>myPC: At time 96 executed a *
+============== SIMULATION STEP 97 ==============
+>myPC: At time 97 fetched a *
+============== SIMULATION STEP 98 ==============
+>myPC: At time 98 executed a *
+============== SIMULATION STEP 99 ==============
+>myPC: At time 99 fetched a *
+============== SIMULATION STEP 100 ==============
+>myPC: At time 100 executed a *
+============== SIMULATION STEP 101 ==============
+>myPC: At time 101 fetched a *
+============== SIMULATION STEP 102 ==============
+>myPC: At time 102 executed a *
+============== SIMULATION STEP 103 ==============
+>myPC: At time 103 fetched a *
+============== SIMULATION STEP 104 ==============
+>myPC: At time 104 executed a *
+============== SIMULATION STEP 105 ==============
+>myPC: At time 105 fetched a *
+============== SIMULATION STEP 106 ==============
+>myPC: At time 106 executed a *
+============== SIMULATION STEP 107 ==============
+>myPC: At time 107 fetched a $
+============== SIMULATION STEP 108 ==============
+>myPC: At time 108 executed a $
+ >myOS: Exiting the running process
+============== SIMULATION STEP 109 ==============
+>myPC: At time 109 fetched a X
+============== SIMULATION STEP 110 ==============
+>myPC: At time 110 executed a X
+ >myOS: Finished exiting program 5
+  >Exit: finished exiting process 9. Starting coalesce
+============== SIMULATION STEP 111 ==============
+>User: Pressed button 3
+>myPC: At time 111 fetched a N
+============== SIMULATION STEP 112 ==============
+>myPC: At time 112 executed a N
+ >myOS: Coalesce partition 26
+  >Coalesce : Merged previous partition with current.
+  >Coalesce: Finished coalescing partition 26.Starting Process Scheduler
+============== SIMULATION STEP 113 ==============
+>myPC: At time 113 fetched a S
+============== SIMULATION STEP 114 ==============
+>myPC: At time 114 executed a S
+ >myOS: Finished scheduling
+  >Scheduler: selected from the ready queue process 10
+============== SIMULATION STEP 115 ==============
+>myPC: Keyboard interrupt handled. Request for program3.exe. Staring Memory Manager
+>myPC: At time 115 fetched a *
+============== SIMULATION STEP 116 ==============
+>myPC: At time 116 executed a *
+============== SIMULATION STEP 117 ==============
+ >MyOS: suspending process 10
+ >MyOS: adding suspended process (10) to ready queue
+>myPC: At time 117 fetched a *
+============== SIMULATION STEP 118 ==============
+>myPC: At time 118 executed a *
+============== SIMULATION STEP 119 ==============
+>myPC: At time 119 fetched a M
+============== SIMULATION STEP 120 ==============
+>myPC: At time 120 executed a M
+ >myOS: Finished running memory manager
+  >Memory Manager : Partition with BA : 9 was found.Starting Process Creator
+============== SIMULATION STEP 121 ==============
+>myPC: At time 121 fetched a C
+============== SIMULATION STEP 122 ==============
+>myPC: At time 122 executed a C
+ >myOS: Finished creating process
+  >Process Creator: process with PID 15 created at partition -1 (BA 9). Starting process admitter
+============== SIMULATION STEP 123 ==============
+>myPC: At time 123 fetched a A
+============== SIMULATION STEP 124 ==============
+>myPC: At time 124 executed a A
+ >myOS: Finished admitting process to the ready queue
+  >Process Admitter: Admitted process 15 to the readyQueue. Starting Scheduler
+============== SIMULATION STEP 125 ==============
+>myPC: At time 125 fetched a S
+==============
